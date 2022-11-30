@@ -1,5 +1,7 @@
 body{
+    font-family: 'Poppins', sans-serif;
     background-color: cadetblue;
+    font-size: 9px;
 }
 .wrapper{
     /* base width - 1720 x - 0.7*/

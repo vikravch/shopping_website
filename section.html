@@ -13,15 +13,37 @@
             height: 500px;
         }
         .left-side{
+            display: flex;
             flex: 5;
+            flex-direction: column;
+            padding: 40px 0 0 56px;
         }
+
+        .left-side span:not(:last-child){
+            font-weight: 900;
+            font-size: 5em;
+            line-height: 1.2em;
+        }
+
+        .left-side span:nth-child(1) div{
+            position: absolute;
+            background: white;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left-side span:nth-child(3){
+            background: #EBD96B;
+        }
+
+
         .right-side{
             position: relative;
             flex: 6;
         }
         .right-side img:nth-child(1){
             position: absolute;
-            width: 460px;
+            width: 520px;
             bottom: 0;
         }
         .right-side img:not(:nth-child(1)){
@@ -52,7 +74,13 @@
 <body>
 <div class="section2">
     <div class="wrapper">
-        <div class="left-side"></div>
+        <div class="left-side">
+            <p><div></div>LET’S</p>
+            <span>EXPLORE</span>
+            <span><div></div>UNIQUE</span>
+            <span>CLOTHES.</span>
+            <span>Live for Influential and Innovative fashion!</span>
+        </div>
         <div class="right-side">
             <img src="img/Woman.png" alt="woman">
             <img src="img/star.png" alt="star1">
